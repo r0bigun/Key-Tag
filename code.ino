@@ -88,7 +88,7 @@ void Home(){
     }
 
     
-    String url = "/signal/send.php?phone=+4550238043&apikey=796879&text=Your+child+arrived+at+home+%0D+Battery+%20" + String(bat_percentage) + "%25";
+    String url = "/signal/send.php?phone=+4550238043&apikey=796879&text=Your+child+has+arrived+at+home+%0D+Battery+%20" + String(bat_percentage) + "%25";
 	// phone=+45 your phone number, apikey = your apikey, text = write your desired message by adding "+" after each word.
 
     Serial.print("Requesting URL: ");
@@ -127,7 +127,7 @@ void School(){
     }
 
     
-    String url1 = "/signal/send.php?phone=+4550238043&apikey=796879&text=Your+child+arrived+at+school+%0D+Battery+%20" + String(bat_percentage) + "%25";
+    String url1 = "/signal/send.php?phone=+4550238043&apikey=796879&text=Your+child+has+arrived+at+school+%0D+Battery+%20" + String(bat_percentage) + "%25";
 	// phone=+45 your phone number, apikey = your apikey, text = write your desired message by adding "+" after each word.
 
     Serial.print("Requesting URL: ");
