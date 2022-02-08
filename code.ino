@@ -19,7 +19,7 @@ void battery(){
   sensorValue = analogRead(analogInPin);
   float voltage = (((sensorValue * 3.3) / 3810) * 2); //multiply by two as voltage divider network is 10K & 10K Resistor
  
-  bat_percentage = mapfloat(voltage, 3.0, 4.1, 0, 100); //3.0V as Battery Cut off Voltage & 4.2V as Maximum Voltage
+  bat_percentage = mapfloat(voltage, 3.0, 4.2, 0, 100); //3.0V as Battery Cut off Voltage & 4.2V as Maximum Voltage
  
   if (bat_percentage >= 100)
   {
